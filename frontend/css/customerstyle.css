@@ -1,0 +1,95 @@
+.top-b-section{
+		width: 100%;
+		background-image: -webkit-gradient(linear,left top,left bottom,from(#f2f2f2),to(#fafafa));
+		margin-top: 120px;
+
+	}
+	.sell-top-nav{
+		justify-content: center;
+		position: relative;
+    	padding: 4px 0;
+    	
+	}
+	.sell-top-tit{
+	font-size: 12px;
+    color: #282c3f;
+    vertical-align: middle;
+    line-height: 26px;
+    font-family: circular, Arial, sans-serif;
+}
+.acc-head{
+	font-family: circular,Arial,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.14;
+    border-bottom: 1px solid #eeeeef;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0 0 12px;
+    color: #303030;
+}
+.pr-menu-left li{
+	list-style:none;
+}
+.nav-header{
+	text-decoration: none;
+	color: #979797;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.nav-header:hover{
+
+	color: #979797;
+	
+}
+.pr-menu-left li a{
+	text-decoration: none;
+	color: #303030;
+	display: block;
+	padding: 4px 0;
+}
+.pr-menu-left li a:hover{
+	color: #fe9126;
+}
+.pr-menu-left li a.active{
+	color: #fe9126;
+}
+.contact-field label{
+	font-size: 12px;
+    color: #979797;
+    display: block;
+    min-height: 14px;
+    margin-top: 10px;
+}
+.contact-field input{
+    font-size: 14px;
+    padding: 9px 12px;
+    display: block;
+    margin-bottom: 0;
+    height: 39px;
+    width: 100%;
+    font-family: circular,Arial,sans-serif;
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+}
+.contact-field input:hover{
+	background-color: #f4f4f4;
+    cursor: not-allowed;
+}
+.upper-header{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.upper-header h2{
+	color: #0d0d0d;
+    font-style: normal;
+    font-weight: 400;
+}
+.upper-header a{
+	color: #fe9126;
+    
+}

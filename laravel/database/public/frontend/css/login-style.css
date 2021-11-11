@@ -1,0 +1,242 @@
+	.bg{
+		background: url("/frontend/images/login/background.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		padding: 130px;
+	
+
+	}
+	.log-form{
+	position: relative;
+    border: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0px auto;
+    max-width: 448px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: rgb(40 44 63 / 8%) 0px 0px 16px 0px;
+	}
+	.log-form{
+		padding: 50px;
+
+	}
+	.log-form > img{
+		height: 30px;
+		margin-bottom: 10px;
+	}
+	.log-form{
+		text-align: center;
+
+	}
+	.log-form small{
+		    text-align: center;
+		    padding-top: 12px;
+		    padding-bottom: 48px;
+		    font-size: 10px;
+		    letter-spacing: 2px;
+		    text-transform: uppercase;
+		    color: rgb(165, 167, 174);
+			
+	
+	}
+	.log-form form .form-inner b{
+		font-size: 14px;
+		line-height: 46px;
+		text-align: center;
+	    font-weight: 700;
+	    font-size: 14px;
+	    
+	    color: rgb(40, 44, 63);
+		
+	}
+	.form-inner input{
+		border: 1px solid rgb(40, 44, 63, 0.6);
+	    padding: 6px 16px 5px;
+	    height: 40px;
+	    background-color: transparent;
+	    box-shadow: none;
+	    border-radius: 2px;
+	    font-family: circular, Arial, sans-serif;
+		width: 90%;
+		font-size: 12px;
+		transition: 0.2s;
+	}
+	.form-inner input:focus{
+		border: 1px solid #fe9126;
+		outline: none;
+	}
+	
+	.log-form button{
+	
+		background: #fe9126;
+		color: #fff;
+		width: 90%;
+		padding: 10px 0px;
+		border: none;
+		outline: none;
+		margin-top: 20px;
+	}
+	
+	.botm-head{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 15px 0px;
+	}
+	.botm-head div{
+		height: 1px;
+		width: 100px;
+		background-image: linear-gradient(to left, rgba(254, 146, 38,0), rgba(254, 146, 38,1));
+		margin: 0px 10px;
+		
+	}
+	.botm-head div:nth-child(1){
+			background-image: linear-gradient(to right, rgba(254, 146, 38,0), rgba(254, 146, 38,1));	
+	}
+	
+	.social-log{
+		display: flex;
+		justify-content: center;
+		margin: 15px 0px;
+	}
+	.social-log img{
+		border: 1px solid #ddd;
+		width: 44px;
+	    height: 44px;
+        cursor: pointer;
+        padding: 5px;
+        margin: 0px 5px;
+}
+.inp-field{
+	margin-top: 20px;
+}
+#show-log-bot{
+	display: none;
+}
+#login-submit{
+	margin-left: 5%;
+	display: none;
+}
+.chk{
+	margin-top: 10px;
+}
+.chk input{
+	width: auto;
+	height:auto;
+}
+.chk{
+	margin-left: 5%;
+	width: 90%;
+	font-size: 12px;
+	text-align: left;
+	color: rgb(0,0,0,0.6);
+}
+
+.chk a{
+	text-decoration: none;
+	color: #3a3b3d;
+	font-weight: bold;
+	transition: 0.1s;
+}
+.chk a:hover{
+	color: #fe9126;
+}
+#notyou{
+	margin-top: 20px;
+	color: rgb(40, 44, 63);
+	text-decoration: none;
+	display: none;
+	font-weight: 600;
+}
+.seller b{
+	font-size: 14px;
+	color: #3a3b3c;
+	font-weight: 600 !important;
+}
+.seller label input{
+	width: auto;
+	height:auto;
+	margin-right: 5px;
+
+}
+.seller label{
+	font-size: 14px;
+	font-weight: 400;
+	padding: 0px 10px;
+}
+.forsel {
+	padding: 15px;
+	border: 1px solid #ddd;
+	background: rgb(0,0,0,0.02);
+}
+.forsel p{
+	font-size: 12px;
+	color: rgb(0,0,0,0.8);
+	margin: 0px;
+}
+#individual-desc{
+	display: none;
+}
+#business-desc{
+	display: none;
+}
+#ntn{
+	display: none;
+}
+.custom-select select{
+	text-align: center !important;
+	width: 300px;
+	padding: 10px 0px;
+	border: 1px solid #ddd;
+
+
+}
+.custom-select select option{
+	text-align: center;
+}
+.custom-select select:focus{
+	border: 1px solid #ddd;
+	outline: none;
+}
+.custom-select-selected{
+	background: black;
+}
+.flyr-pr{
+	padding: 10px;
+	background: rgb(0,0,0,0.02);
+	border: 1px solid #ddd;
+	margin-top: 20px;
+}
+
+.flyr-pr table tr td{
+	border: none;
+	padding: 3px;
+}
+.flyr-pr table tr td:nth-child(1){
+	text-align: left;
+}
+.flyr-pr label{
+	border-bottom: 1px solid #fe9126;
+
+}
+.form-inner select{
+		border: 1px solid rgb(40, 44, 63, 0.6);
+	    padding: 6px 16px 5px;
+	    height: 40px;
+	    background-color: transparent;
+	    box-shadow: none;
+	    border-radius: 2px;
+	    font-family: circular, Arial, sans-serif;
+		width: 90%;
+		font-size: 12px;
+		transition: 0.2s;
+	}
+	.form-inner select:focus{
+		border: 1px solid #fe9126;
+		outline: none;
+	}
+	

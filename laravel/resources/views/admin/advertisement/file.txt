@@ -1,0 +1,113 @@
+ public function addadvertisement()
+    {
+        if(isset($_POST['add'])){
+             extract($_REQUEST);
+             $GetData =  \DB::table('advertisement')->get();
+              $file_path = storage_path('uploads/');
+            if(!empty($_FILES['image']['name'])) {
+                        $new_name = date("ymdhis");
+                        $ImagePath = $_FILES['image']['tmp_name'];
+                        $image = file_get_contents($ImagePath);
+                        $SaveFileName2 = $new_name.$_FILES['image']['name'];
+                        file_put_contents($file_path.$SaveFileName2, $image);
+                                    
+                        $mainimage = $SaveFileName2; 
+                    }else{
+                        $mainimage = '';
+                    }
+                $add = \DB::table('advertisement')->insertGetId(
+                     array(
+                            'title'     =>    $title, 
+                            'image'     =>   $mainimage, 
+              
+                            'button_title'    =>  $button_title,
+                            'button_link'    =>   $button_link,
+                            'section'    =>   $section,
+                            'status'    =>   $status,
+                            'added_by'   => Auth::id(),
+                     )
+                );
+                if(!empty($add)){
+                    return redirect('admin/advertisement/index')->with('status', 'New advertisement Added Successfully!');
+                }
+        }
+
+        return view('admin.advertisement.addadvertisement');
+    }
+     public function editadvertisement($id)
+    {
+       
+    $GetData =  \DB::table('advertisement')->where('id', $id)->first();
+        if(isset($_REQUEST['update'])){
+           // echo "1";die;
+           //echo "<pre>";print_r($_REQUEST);die;
+             extract($_REQUEST);
+              $file_path = storage_path('uploads/');
+            if(!empty($_FILES['image']['name'])) {
+                
+                        $new_name = date("ymdhis");
+                        $ImagePath = $_FILES['image']['tmp_name'];
+                        $image = file_get_contents($ImagePath);
+                        $SaveFileName2 = $new_name.$_FILES['image']['name'];
+                        file_put_contents($file_path.$SaveFileName2, $image);
+                                    
+                        $mainimage = $SaveFileName2; 
+                    }else{
+                        $mainimage = $GetData->image;
+                    }
+           $update = \DB::table('advertisement')->where('id', $id)->update(
+                       array(
+                            'image'             =>   $mainimage, 
+                             'button_title'    =>  $button_title,
+                            'button_link'    =>   $button_link,
+                            'section'    =>   $section,
+                            'status'    =>   $status,   
+                            'added_by'   => Auth::id(),
+                     )
+                          
+                          // 'short_description'   =>  $short_description,
+                               
+                     );
+            
+             return redirect('admin/advertisement/index')->with('status', 'advertisement Updated Successfully!');
+        }
+
+     
+        return view('admin/advertisement/updateadvertisement',array('GetData'=>$GetData));
+
+    }
+    public function deletadvertisement($id)
+    {
+        $GetData =  \DB::table('advertisement')->where('id', $id)->delete();
+        return redirect('admin/advertisement/index')->with('status', 'advertisement Deleted Successfully!');
+    }
+
+
+
+
+
+
+
+
+
+......................................
+      <li><a href="{{ asset('/admin/advertisement/index') }}">
+                            <i class="fa fa-file" aria-hidden="true"></i> Advertisement</a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+
+.........................
+Route::get('/admin/advertisement/index', 'AdministratorController@advertisement')->name('advertisement');
+Route::get('/admin/advertisement/addadvertisement', 'AdministratorController@addadvertisement')->name('addadvertisement');
+Route::post('/admin/advertisement/addadvertisement', 'AdministratorController@addadvertisement')->name('addadvertisement');
+Route::post('/admin/advertisement/editadvertisement/{id}', 'AdministratorController@editadvertisement')->name('editadvertisement');
+Route::post('/admin/advertisement/deletadvertisement/{id}', 'AdministratorController@deletadvertisement')->name('deletadvertisement');

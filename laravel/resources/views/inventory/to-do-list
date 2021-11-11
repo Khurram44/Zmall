@@ -1,0 +1,17 @@
+title
+category
+sub category
+brand
+color
+size
+quantity
+price
+availability = yes/no
+status = active/inactive
+description = text editor
+
+
+$categories=Manage::where('module_id', 1)->get();
+$sub_categories=Manage::where('module_id', 2)->get();
+$size=Manage::where('module_id', 3)->get();
+$color=Manage::where('module_id', 4)->get();

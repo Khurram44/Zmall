@@ -1,0 +1,232 @@
+	.bg{
+		background: url("background.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		padding: 130px;
+	
+
+	}
+	.log-form{
+	position: relative;
+    border: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0px auto;
+    max-width: 588px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: rgb(40 44 63 / 8%) 0px 0px 16px 0px;
+    margin-top: 20px;
+	}
+	.log-form{
+		padding: 10px 50px;
+
+	}
+	.log-form > img{
+		height: 30px;
+		margin-bottom: 10px;
+	}
+	.log-form{
+		text-align: center;
+
+	}
+	.log-form small{
+		    text-align: center;
+		    padding-top: 12px;
+		    padding-bottom: 48px;
+		    font-size: 10px;
+		    letter-spacing: 2px;
+		    text-transform: uppercase;
+		    color: rgb(165, 167, 174);
+			
+	
+	}
+	.log-form form .form-inner b{
+		font-size: 14px;
+		line-height: 46px;
+		text-align: center;
+	    font-weight: 700;
+	    font-size: 14px;
+	    
+	    color: rgb(40, 44, 63);
+		
+	}
+	.form-inner input{
+		font-size: 14px;
+    padding: 0px 10px;
+    display: block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    background-color: #fafafa;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+		transition: 0.2s;
+	}
+	.form-inner select{
+		font-size: 14px;
+    padding: 0px 10px;
+    display: block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    background-color: #fafafa;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+		transition: 0.2s;
+	}
+	.form-inner textarea{
+		font-size: 14px;
+    padding: 10px;
+    display: block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    height: 104px;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    background-color: #fafafa;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+		transition: 0.2s;
+	}
+	.form-inner input:focus{
+		border: 1px solid #fe9126;
+		outline: none;
+	}
+	
+	.log-form button{
+	
+		background: #fe9126;
+		color: #fff;
+		width: 90%;
+		padding: 10px 0px;
+		border: none;
+		outline: none;
+		margin-top: 20px;
+	}
+	
+	.botm-head{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 15px 0px;
+	}
+	.botm-head div{
+		height: 1px;
+		width: 100px;
+		background-image: linear-gradient(to left, rgba(254, 146, 38,0), rgba(254, 146, 38,1));
+		margin: 0px 10px;
+		
+	}
+	.botm-head div:nth-child(1){
+			background-image: linear-gradient(to right, rgba(254, 146, 38,0), rgba(254, 146, 38,1));	
+	}
+	
+	.social-log{
+		display: flex;
+		justify-content: center;
+		margin: 15px 0px;
+	}
+	.social-log img{
+		border: 1px solid #ddd;
+		width: 44px;
+	    height: 44px;
+        cursor: pointer;
+        padding: 5px;
+        margin: 0px 5px;
+}
+.inp-field{
+	margin-top: 20px;
+}
+
+
+.inf-b h6{
+	font-size: 18px;
+    font-weight: 600;
+	color: #333;
+    font-size: 16px;
+    line-height: 1.14;
+    margin: 12px 0;
+}
+.inf-b p{
+	color: #333;
+    font-size: 16px;
+    line-height: 1.14;
+    margin: 12px 0;
+    font-size: 14px;
+}
+.fie input{
+
+	cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 2px;
+    padding: 7px 18px 6px;
+    font-size: 14px;
+    font-family: Source Sans Pro,sans-serif;
+    font-weight: 600;
+    color: #3d158c;
+    background-color: #f7f5fa;
+    border: 1px solid #3d158c;
+    text-decoration: none;
+}
+.preview{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 188px;
+    border: 1px solid #e6e6e6;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.topdesc b{
+	    color: #1a1a1a;
+    font-size: 14px;
+    line-height: 1.14;
+    margin: 4px 0 24px;
+    font-weight: 400;
+}
+.chk {
+
+display: flex;
+}
+.chk input{
+	height: auto;
+	width: auto;
+}
+.chk label{
+	margin-left: 10px;
+	font-size: 12px;
+	font-weight: 400;
+	color: rgb(0,0,0,0.6);
+}

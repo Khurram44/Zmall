@@ -1,0 +1,239 @@
+body{
+  background: rgb(0,0,0,0.05);
+}
+  .progress-bar{
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  background: none;
+  color:  #3a3b3c;
+  align-items: center;
+}
+  .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-left: 20px;
+}
+.progress-bar .step p{
+  font-weight: 500;
+  font-size: 10px;
+  color: rgb(0,0,0,0.7);
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 1px solid rgb(0,0,0,0.7);;
+  color: rgb(0,0,0,0.5);
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.3;
+}
+.progress-bar .step .bullet.active{
+  opacity: 1;
+}
+.progress-bar .step .bullet:after{
+  background: #3a3b3c;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+  opacity: 0.6;
+}
+.lastone .bullet:after{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -86px;
+  height: 1px;
+  width: 79px;
+  
+}
+@media screen and (max-width:500px){
+  .progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  height: 1px;
+  width: 25px;
+  background: rgb(0,0,0,0.6);
+  display: none;
+}
+}
+.progress-bar .step .bullet.active:after{
+  background: #3a3b3c;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+  opacity: 0.6;
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step p.active{
+  width: 1px;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  display: none;
+}
+
+.header{
+  align-items: center;
+  background: #fff;
+  height: 80px;
+  -webkit-box-shadow: 5px 14px 6px -11px rgba(0,0,0,0.1); 
+  box-shadow: 5px 14px 6px -11px rgba(0,0,0,0.1);
+}
+.header h3{
+   margin-left: 50px;
+}
+.store{
+  position: absolute;
+  top: 20%;
+  right: 37%;
+  background: #fff;
+  padding: 30px;
+-webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1); 
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+
+}
+.p1-top-title{
+  text-align: center;
+}
+.formall{
+margin-bottom: 30px;
+  
+  
+}
+.slct {
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  height: 250px;
+  padding: 10px;
+  margin-left: 30px;
+}
+.slct:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.slct img{
+  width: 250px;
+  overflow: hidden;
+}
+.store a{
+  background: #fe9126;
+  color: #fff;
+  padding: 10px 134px;
+  text-decoration: none;
+}
+.formall-store{
+  width: 500px;
+}
+.slct input{
+
+}
+.slct-form{
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+ 
+
+}
+small{
+  font-size: 12px;
+  color: rgb(0,0,0,0.6);
+  text-transform: uppercase;
+}
+
+.opneinwin a{
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  background: none;
+  color: #3d158c;  
+  font-weight: bold;
+  text-transform: capitalize !important;
+  text-align: center;
+  font-size: 14px;
+
+}
+.sm-dec-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sm-dec-btn  button{
+  margin: 0px 20px;
+}
+.sm-dec-btn  button:nth-child(1){
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+}
+.sm-dec-btn  button:nth-child(2){
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  background: #fe9126;
+  color: #fff;
+}
+.chk-frm{
+  margin-top: 20px;
+}
+.print-store{
+  position: absolute;
+  top: 15%;
+  width: 50%;
+  right: 25%;
+  background: #fff;
+  padding: 30px;
+-webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1); 
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+
+}
+.showpdf{
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.formall-print{
+  margin-top: 20px;
+}
+.formall-print a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: #3a3b3c;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .print-store{
+    width: 100%;
+    left: 0%;
+  }
+  .showpdf embed{
+  position: relative;
+  right: 20%;
+}
+
+}
